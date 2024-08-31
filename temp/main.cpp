@@ -54,26 +54,26 @@ NODE *func(NODE *head) {
 
   r = ReverseLink(r);
 
-  NODE *l = head->next,*t = head;
-  while(l){
-      t->next = l;
-      l = l->next;
+  NODE *l = head->next, *t = head;
+  while (l) {
+    t->next = l;
+    l = l->next;
+    t = t->next;
+    if (r) {
+      t->next = r;
+      r = r->next;
       t = t->next;
-      if(r){
-          t->next = r;
-          r = r->next;
-          t = t->next;
-      }
+    }
   }
 
-return head;
+  return head;
 }
 
 int main() {
   NODE *head = (NODE *)malloc(sizeof(NODE));
 
   NODE *t = head;
-  int arr[] = {1, 2, 3, 4, 5, 6, 7,8};
+  int arr[] = {1, 2, 3, 4, 5, 6, 7, 8};
   for (int i = 0; i < 8; i++) {
     t->next = createNode(arr[i]);
     t = t->next;
