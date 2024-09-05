@@ -4,16 +4,6 @@
 #include <iostream>
 using namespace std;
 
-// 初始化函数，相当于构造函数
-// Node *createNode(int value) {
-//   Node *newNode = (Node *)malloc(sizeof(Node));
-//   if (newNode != NULL) {
-//     newNode->data = value;
-//     newNode->link = NULL;
-//   }
-//   return newNode;
-// }
-
 int findMid(int a1[], int a2[], int n) {
   int l1 = 0, l2 = 0, r1 = n - 1, r2 = n - 1;
   int m1, m2;
