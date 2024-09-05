@@ -1,4 +1,4 @@
-// 2009全国试题42 13'
+// 2009全国试题42 15'
 
 #include <cstddef>
 #include <iostream>

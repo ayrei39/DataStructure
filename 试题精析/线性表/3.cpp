@@ -4,16 +4,6 @@
 #include <iostream>
 using namespace std;
 
-// 初始化函数，相当于构造函数
-// Node *createNode(int value) {
-//   Node *newNode = (Node *)malloc(sizeof(Node));
-//   if (newNode != NULL) {
-//     newNode->data = value;
-//     newNode->link = NULL;
-//   }
-//   return newNode;
-// }
-
 void leftMove(int arr[], int n, int p){
     reverse(arr, arr + p);
     reverse(arr+p, arr +n);
